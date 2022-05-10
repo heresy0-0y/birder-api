@@ -1,4 +1,6 @@
 class AuthenticationController < ApplicationController
+end
+class AuthenticationController < ApplicationController
     before_action :authorize_request, except: :login
     
     def login

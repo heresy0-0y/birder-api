@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::API
+end
+class ApplicationController < ActionController::API
     SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
   
     def encode(payload, exp = 30.days.from_now)
